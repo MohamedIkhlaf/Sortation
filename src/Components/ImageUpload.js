@@ -27,12 +27,17 @@ function ImageUpload() {
       }      
     }
    }
+
+   const deleteInput = () => { 
+    setFiles("")
+   }
    
   return (
     
     <form>
       {/* <input type="file" onChange={onImageChange} /> */}
-      <input directory="" webkitdirectory="" type="file" onChange={onImageChange} />
+      <input directory="" webkitdirectory="" type="file" onChange={onImageChange} />  
+      <button onClick= {() => deleteInput} style={{width: '60px', height: '25px'}} >Delete</button>
       <div className="output" style={{ paddingTop: "10px" }}>
         {error && <div className="error">{error}</div>}
         <div className="imagebox" style={{ paddingTop: "2px"}}>
