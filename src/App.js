@@ -1,13 +1,13 @@
 import './App.css';
-import ImageUpload from './ImageUpload'
+import ImageUpload from './Components/ImageUpload'
+import Homepage from './Components/Homepage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <ImageUpload />
-        
-      </header>
+
+      <Homepage />
+
     </div>
   );
 }
