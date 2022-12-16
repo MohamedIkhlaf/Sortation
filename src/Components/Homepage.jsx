@@ -1,13 +1,8 @@
 import React from "react";
-import GlobalStyles from '@mui/material/GlobalStyles';
-import AppBar from '@mui/material/AppBar';
 import Container from '@mui/material/Container';
-import Toolbar from '@mui/material/Toolbar';
-import Link from '@mui/material/Link';
-import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import ImageUpload from "./ImageUpload";
-import ImageUploader from "./ImageUploader";
+
 
 
 const theme = createTheme();
