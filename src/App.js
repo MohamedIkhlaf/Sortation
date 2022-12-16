@@ -1,5 +1,4 @@
 import './App.css';
-import ImageUpload from './Components/ImageUpload'
 import Homepage from './Components/Homepage';
 
 function App() {
