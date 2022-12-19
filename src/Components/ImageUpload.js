@@ -1,4 +1,3 @@
-import { ImageList } from '@mui/material';
 import React, { useState } from 'react';
 
 function ImageUpload() {
