@@ -32,21 +32,21 @@ function ImageUpload() {
       }      
     }
    }
-
+   
   // delete input
   const deleteInput = () => { 
     setFiles("")
   }
    
   useEffect(() => {
-    async function loadModel() {
-      const model = await tf.loadLayersModel('./srs/Models/AngleNN.json');
+    async function loadModels() {
+      // const model = await tf.loadLayersModel("https://raw.githubusercontent.com/MohamedIkhlaf/Sortation/dev_env/src/Models/AngleNN.json");
       console.log(model)
       console.log("model")
 
-      setModel(model);
+      setModel(model);  
     }
-    loadModel();
+    loadModels();
   }, []);
 
   async function handlePredictClick() {
