@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import * as tf from '@tensorflow/tfjs';
-import { loadModel } from '@tensorflow/tfjs-converter';
+// import { loadModel } from '@tensorflow/tfjs-converter';
+
 
 
 function ImageUpload() {
@@ -40,9 +41,9 @@ function ImageUpload() {
    
   useEffect(() => {
     async function loadModels() {
-      // const model = await tf.loadLayersModel("https://raw.githubusercontent.com/MohamedIkhlaf/Sortation/dev_env/src/Models/AngleNN.json");
+      const model = await tf.loadLayersModel("https://raw.githubusercontent.com/MohamedIkhlaf/Sortation/dev_env/src/Models/AngleNN.json");
+      // const model = await tf.loadLayersModel("./Models/AngleNN.h5")
       console.log(model)
-      console.log("model")
 
       setModel(model);  
     }
